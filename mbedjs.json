@@ -1,0 +1,9 @@
+{
+    "source": [
+        "."
+    ],
+    "includes": [
+        "chainable-rgb-led/lib_chainable_rgb_led.h"
+    ],
+    "name": "chainable_rgb_led"
+}
