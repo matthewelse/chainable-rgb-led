@@ -63,7 +63,7 @@ DECLARE_CLASS_CONSTRUCTOR(ChainableLED) {
     uintptr_t native_ptr = (uintptr_t)new ChainableLED((PinName)clk_pin, (PinName)sda_pin, (PinName)num_leds);
 
     jerry_value_t js_object = jerry_create_object();
-    jerry_set_object_native_handle(js_object, native_handle, NAME_FOR_CLASS_NATIVE_DESTRUCTOR(ChainableLED));
+    jerry_set_object_native_handle(js_object, native_ptr, NAME_FOR_CLASS_NATIVE_DESTRUCTOR(ChainableLED));
 
     return js_object;
 }
