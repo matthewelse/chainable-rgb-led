@@ -65,5 +65,7 @@ DECLARE_CLASS_CONSTRUCTOR(ChainableLED) {
     jerry_value_t js_object = jerry_create_object();
     jerry_set_object_native_handle(js_object, native_ptr, NAME_FOR_CLASS_NATIVE_DESTRUCTOR(ChainableLED));
 
+    ATTACH_CLASS_FUNCTION(js_object, ChainableLED, setColorRGB);
+
     return js_object;
 }
